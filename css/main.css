@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&family=Roboto:ital,wght@1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ANIMACIONES */
+.menu-animado {
+	-webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+colores {
+    background:
+    #e7594c 
+    #f9ebe1
+    #e1d031
+    #e4a030
+    #81b36b
+    #d56e13;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* ----- HEADER ----- */
+header {
+    background: #ffffff;
+    position: fixed;
+    width: 100%;
+    border-bottom: solid 1px #d56e13;
+    z-index: 1;
+}
+.menu img {
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+body {
+    background: #f9ebe1;
+}
+.menu {
+    display: flex;
+}
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 1rem;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+    
+}
+
+.menu ul li {
+font-size: 1.5rem;
+}
+.menu a {
+    color: #e7594c;
+    text-decoration: none;
+}
+
+/* ----- MAIN ----- */
+main img {
+    margin-top: 200px;
+    width: 300px;
+    height: 350px;
+    border-radius: 8px;
+}
+.presentacion {
+    display: grid;
+    justify-content: center;
+    align-items: end;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    min-height: 100vh;
+}
+.presentacion .perfil {
+    grid-area: 1 / 2;
+}
+.informacion {
+    grid-area: 1 / span 2;
+}
+main .perfil {
+    display: grid;
+    justify-content: center;
+    align-items: end;
+}
+.informacion h1 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+.informacion h3 {
+    font-family: 'Roboto', sans-serif;
+}
+.informacion p {
+    font-size: 1.5rem;
+    padding: 30px 0 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+/* ----- SOBRE MI ----- */
+main .sobre-mi {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    min-height: 100vh;    
+    font-family: 'Roboto', sans-serif;
+}
+section .titulo {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 80px;
+    font-size: 3rem;
+}
+section .color {
+    background: #e4a030;
+    color: white;
+}
+section .shadow-btn:focus {
+    box-shadow: 0 0 0.5rem #81b36b;
+}
+section .texto-dentro {
+    font-size: 1.5rem;
+}
+section .probando {
+    margin-top: 150px;
+    grid-column: 2 / 5;
+}
+section .destacado {
+    font-weight: 900;
+    text-decoration: underline;
+}
+/* EXPERIENCIA LABORAL */ 
+main .experiencia-laboral {
+    position: relative;
+    margin-top: 150px;
+    height: 100vh;
+}
+main #experiencia h2 {
+    transform: translate3d(0px, 80px, 0px);
+    text-align: center;
+}
+main .experiencia-laboral hr {
+    border: solid 1px black;
+    opacity: 0.50;
+}
+main .tarjeta {
+    background: white;
+    position: absolute;
+    border: solid 2px #d56e13;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    left: 80px;    
+    width: 800px;      
+}
+main .tarjeta1 {
+    background: white;
+    position: absolute;
+    border: solid 2px #e1d031;
+    border-radius: 10px;
+    margin: 10px; 
+    padding: 10px;   
+    top: 180px;
+    right: 150px;
+    width: 800px;
+}
+main .tarjeta2 {
+    background: white;
+    position: absolute;
+    border: solid 2px #81b36b;
+    border-radius: 10px;
+    margin: 10px;    
+    padding: 10px;
+    left: 50px;
+    top: 300px;
+    width: 500px;
+}
+main .tarjeta3 {
+    background: white;
+    position: absolute;
+    border: solid 2px #e7594c ;
+    border-radius: 10px;
+    margin: 10px; 
+    padding: 10px;   
+    left: 700px;
+    top: 500px;
+    width: 700px;
+}
+
+/* ----- FOOTER ----- */

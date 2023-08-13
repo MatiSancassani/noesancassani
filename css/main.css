@@ -89,7 +89,12 @@ font-size: 1.5rem;
     text-decoration: none;
 }
 
+
+
+
+
 /* ----- MAIN ----- */
+
 main img {
     margin-top: 200px;
     width: 300px;
@@ -127,12 +132,18 @@ main .perfil {
     padding: 30px 0 20px 0;
     font-family: 'Roboto', sans-serif;
 }
+
+
+
+
+
 /* ----- SOBRE MI ----- */
+
 main .sobre-mi {
     display: grid;
     justify-content: center;
     align-items: start;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     min-height: 100vh;    
     font-family: 'Roboto', sans-serif;
@@ -143,25 +154,18 @@ section .titulo {
     padding-top: 80px;
     font-size: 3rem;
 }
-section .color {
-    background: #e4a030;
-    color: white;
-}
-section .shadow-btn:focus {
-    box-shadow: 0 0 0.5rem #81b36b;
-}
-section .texto-dentro {
-    font-size: 1.5rem;
-}
-section .probando {
-    margin-top: 150px;
-    grid-column: 2 / 5;
-}
+
 section .destacado {
     font-weight: 900;
     text-decoration: underline;
 }
+
+
+
+
+
 /* EXPERIENCIA LABORAL */ 
+
 main .experiencia-laboral {
     position: relative;
     margin-top: 150px;
@@ -170,6 +174,8 @@ main .experiencia-laboral {
 main #experiencia h2 {
     transform: translate3d(0px, 80px, 0px);
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
 }
 main .experiencia-laboral hr {
     border: solid 1px black;
